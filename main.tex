@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{config}
+
+
+
+\begin{document}
+	\begin{titlepage}
+		\newgeometry{margin=1cm}
+		\centering
+		\hspace{0pt}
+		\vfill
+		\textbf{\LARGE{Title}}\\
+		\vspace{1cm}
+		\textbf{\large{Angelo O.L. Rossi}}\\
+		\today\\
+		\vspace{5cm}
+		\includegraphics[width=0.2\linewidth]{figures/epfl.png}
+		\vfill
+	\end{titlepage}
+	\restoregeometry
+	\include{sections/abstract}
+	\tableofcontents
+	\pagenumbering{arabic}
+	\setcounter{page}{3}
+	
+	\include{sections/introduction}
+	\bibliography{ref}
+\end{document}
